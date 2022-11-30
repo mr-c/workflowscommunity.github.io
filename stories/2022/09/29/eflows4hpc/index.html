@@ -1,0 +1,423 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <title> Widening Workflows usage: the eFlows4HPC project - Workflows Community Initiative</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+<meta name="keywords" content="workflow, hpc, science, exascale, fair, reproducibility" />
+<meta name="author" content="Rafael Ferreira da Silva" />
+<meta name="author" content="Henri Casanova" />
+<meta name="author" content="Kyle Chard" />
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<meta name="generator" content="Jekyll v4.2.2" />
+<meta property="og:title" content="Widening Workflows usage: the eFlows4HPC project" />
+<meta name="author" content="Rosa M. Badia" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="The European High-Performance Computing Joint Undertaking (EuroHPC JU) aims at developing a World Class Supercomputing Ecosystem in Europe and, with this goal, is procuring and deploying pre-exascale and petascale systems in Europe. These systems will be capable of running large and complex applications. In this sense, the demand from the application stakeholders includes not only aspects related to High-Performance Computing (HPC) but also artificial intelligence (AI) and data analytics." />
+<meta property="og:description" content="The European High-Performance Computing Joint Undertaking (EuroHPC JU) aims at developing a World Class Supercomputing Ecosystem in Europe and, with this goal, is procuring and deploying pre-exascale and petascale systems in Europe. These systems will be capable of running large and complex applications. In this sense, the demand from the application stakeholders includes not only aspects related to High-Performance Computing (HPC) but also artificial intelligence (AI) and data analytics." />
+<meta property="og:site_name" content="Workflows Community Initiative" />
+<meta property="og:image" content="/images/stories/eflows4hpc-stack.png" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2022-09-29T00:00:00+00:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:image" content="/images/stories/eflows4hpc-stack.png" />
+<meta property="twitter:title" content="Widening Workflows usage: the eFlows4HPC project" />
+<meta name="twitter:site" content="@WorkflowsCI" />
+<meta name="twitter:creator" content="@Rosa M. Badia" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Rosa M. Badia"},"dateModified":"2022-09-29T00:00:00+00:00","datePublished":"2022-09-29T00:00:00+00:00","description":"The European High-Performance Computing Joint Undertaking (EuroHPC JU) aims at developing a World Class Supercomputing Ecosystem in Europe and, with this goal, is procuring and deploying pre-exascale and petascale systems in Europe. These systems will be capable of running large and complex applications. In this sense, the demand from the application stakeholders includes not only aspects related to High-Performance Computing (HPC) but also artificial intelligence (AI) and data analytics.","headline":"Widening Workflows usage: the eFlows4HPC project","image":"/images/stories/eflows4hpc-stack.png","mainEntityOfPage":{"@type":"WebPage","@id":"/stories/2022/09/29/eflows4hpc/"},"url":"/stories/2022/09/29/eflows4hpc/"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+<!-- Prefetch DNS for faster page speed -->
+<link rel="dns-prefetch" href="//fonts.googleapis.com" />
+<link rel="dns-prefetch" href="//google-analytics.com" />
+<link rel="dns-prefetch" href="//www.google-analytics.com" />
+<link rel="dns-prefetch" href="//maxcdn.bootstrapcdn.com" />
+<link rel="dns-prefetch" href="//ajax.googleapis.com" />
+<link rel="dns-prefetch" href="//fonts.gstatic.com" />
+
+<!-- icons -->
+<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" href="/favicon.ico" type="image/x-icon" />
+
+<!-- stylesheets -->
+<link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
+<link rel="stylesheet" href="/assets/css/fontawesome-all.min.css" />
+<link rel="stylesheet" href="/assets/css/main.css" />
+
+<!-- scripts -->
+<script src="/assets/js/jquery.min.js"></script>
+<script src="/assets/js/jquery.countTo.js"></script>
+<script src="/assets/js/bootstrap.min.js"></script>
+
+<script type="text/javascript">
+    $('.dropdown-toggle').dropdown();
+</script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-271163E6PP"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-271163E6PP');
+</script>
+
+<!-- MapBox -->
+<script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
+<link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
+
+</head>
+
+<body class="is-preload">
+    <!-- Wrapper -->
+    <div id="wrapper">
+        <header id="header">
+    <h1><a href="/"><img src="/images/workflows-community-logo-horizontal.png" style="width: 10em" alt="" /></a></h1>
+    <nav class="links">
+        <ul>
+            <li class="dropdown">
+                <a class="dropdown-toggle" href="#" id="workflowsDropdown" role="button" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    Resources
+                </a>
+                <div class="dropdown-menu" aria-labelledby="workflowsDropdown">
+                    <a class="dropdown-item" href="/systems">
+                        <i class="fas fa-dot-circle color-1"></i> Workflow Systems</a>
+                    <a class="dropdown-item" href="/registries">
+                        <i class="fas fa-dot-circle color-2"></i> Workflow Registries</a>
+                    <a class="dropdown-item" href="/education">
+                        <i class="fas fa-dot-circle color-6"></i> Education and Training</a>
+                    <a class="dropdown-item" href="/reports">
+                        <i class="fas fa-dot-circle color-7"></i> Reports</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a class="dropdown-toggle" href="#" id="researchDropdown" role="button" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    Research
+                </a>
+                <div class="dropdown-menu" aria-labelledby="researchDropdown">
+                    <!--
+                    <a class="dropdown-item" href="/task_forces">
+                        <i class="fas fa-dot-circle color-3"></i> Task Forces</a>
+                    -->
+                    <a class="dropdown-item" href="/groups">
+                        <i class="fas fa-dot-circle color-3"></i> Working Groups</a>
+                    <a class="dropdown-item" href="/frameworks">
+                        <i class="fas fa-dot-circle color-5"></i> Research Frameworks</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a class="dropdown-toggle" href="#" id="eventsDropdown" role="button" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    Events
+                </a>
+                <div class="dropdown-menu" aria-labelledby="eventsDropdown">
+                    <a class="dropdown-item" href="/summits">
+                        <i class="fas fa-dot-circle color-1"></i> Workflows Community Summits</a>
+                    <a class="dropdown-item" href="/bof">
+                        <i class="fas fa-dot-circle color-6"></i> Birds of a Feather (BoF)</a>
+                    <a class="dropdown-item" href="/events">
+                        <i class="fas fa-dot-circle color-7"></i> Workflows-Related Events</a>
+                </div>
+            </li>
+            <li><a href="/members" title="List of Members">Members</a></li>
+            <li><a href="/jobs" title="Jobs Market">Jobs</a></li>
+            <li><a href="/about" title="Who are we?">About</a></li>
+        </ul>
+    </nav>
+    <nav class="main">
+        <ul>
+            <li>
+                <a href="/contact" class="getinvolved">Get Involved!</a>
+            </li>
+            <li class="menu">
+                <a class="fa-bars" href="#menu">Menu</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+        <!-- Menu -->
+<section id="menu">
+
+    <!-- Links -->
+    <section>
+        <ul class="links">
+            <li>
+                <a href="/systems">
+                    <h3>Workflow Systems</h3>
+                </a>
+            </li>
+            <li>
+                <a href="/registries">
+                    <h3>Workflow Registries</h3>
+                </a>
+            </li>
+            <!--
+            <li>
+                <a href="/task_forces">
+                    <h3>Task Forces</h3>
+                </a>
+            </li>
+            -->
+            <li>
+                <a href="/groups">
+                    <h3>Working Groups</h3>
+                </a>
+            </li>
+            <li>
+                <a href="/frameworks">
+                    <h3>Research Frameworks</h3>
+                </a>
+            </li>
+            <li>
+                <a href="/summits">
+                    <h3>Workflows Community Summits</h3>
+                </a>
+            </li>
+            <li>
+                <a href="/events">
+                    <h3>Workflow-Related Events</h3>
+                </a>
+            </li>
+            <li>
+                <a href="/members">
+                    <h3>Members</h3>
+                </a>
+            </li>
+            <li>
+                <a href="/jobs">
+                    <h3>Jobs</h3>
+                </a>
+            </li>
+            <li>
+                <a href="/about">
+                    <h3>About</h3>
+                </a>
+            </li>
+        </ul>
+    </section>
+
+</section>
+
+        <!-- Main -->
+        <div id="main">
+            <article class="post">
+    <header>
+        <div class="title" style="margin-bottom: -1em">
+            <h2 style="margin-bottom: 0.5em">Widening Workflows usage: the eFlows4HPC project</h2>            
+        </div>
+        <div class="meta">
+            <div class="story-date">
+                <span class="month-day">Sep 29</span><br />
+                <span class="year">2022</span>
+            </div>
+            <div class="story-author">
+                <img src="https://workflows.community/images/about/badia.jpg" alt="Rosa M. Badia" /><br />
+                Rosa M. Badia<br />
+                <span class="institution">Barcelona Supercomputing Center</span>
+            </div>
+            
+            
+        </div>
+    </header>
+
+    <main class="story-content">
+        <div class="row">
+            <div class="col-sm-12 col-md-12">
+                <p>The European High-Performance Computing Joint Undertaking (EuroHPC JU) aims at developing a World Class Supercomputing Ecosystem in Europe and, with this goal, is procuring and deploying pre-exascale and petascale systems in Europe. These systems will be capable of running large and complex applications. In this sense, the demand from the application stakeholders includes not only aspects related to High-Performance Computing (HPC) but also artificial intelligence (AI) and data analytics.</p>
+
+<p>The eFlows4HPC project has as objective to provide a software stack that makes easier the development of workflows that involve HPC, AI and data analytics components. The project aims to give support to dynamic workflows in the sense that the set of nodes in the graph of the workflow can change during its execution due to changes in the input data or context of the execution, and be reactive to events that may occur. The runtime systems supporting this execution should be able to perform efficient resource management, both in terms of time and energy.</p>
+
+<p>Another objective of the project is to provide mechanisms to make the use and reuse of HPC easier by wider communities. For this purpose, the HPC Workflows as a Service (HPCWaaS) methodology has been proposed. The goal is to provide methodologies and tools that enable sharing and reuse of existing workflows, and that assist when adapting workflow templates to create new workflow instances.</p>
+
+<p><img src="/images/stories/eflows4hpc-stack.png" alt="eFlows4HPC software stack" width="80%" /><br />
+<span class="caption">eFlows4HPC software stack.</span></p>
+
+<p>The eFlows4HPC software stack includes components to develop the workflows at three levels: high-level topology of the workflows using extended TOSCA, required data transfers with the Data Logistic Pipelines and the computational aspects of the workflow with PyCOMPSs. Once a workflow has been developed, it is registered in the Workflow Registry. Similarly, the different components of the workflows, pre-trained AI models and data sets are registered in a set of catalogues and repositories. All these registries and catalogues are used by the HPCWaaS interface, which provides a REST API to deploy and execute the workflows. On execution, the stack also provides a set of runtime libraries to support the workflow execution and data management.</p>
+
+<p><img src="/images/stories/eflows4hpc-methodology.png" alt="HPCWaaS methodology" width="70%" /><br />
+<span class="caption">HPCWaaS methodology.</span></p>
+
+<p>The eFlows4HPC developments are demonstrated in the project through three pillar applications in the areas of digital twins for manufacturing, climate modeling and prediction and urgent computing for natural hazards. Pillar I deals with the construction of digital twins for the prototyping of complex manufactured objects integrating state-of-the-art adaptive solvers with machine learning and data-mining, contributing to the Industry 4.0 vision. Pillar II develops innovative adaptive workflows for climate and for the study of tropical cyclones in the context of the CMIP6 experiment, including in-situ analytics. Pillar III explores the modelling of natural catastrophes – in particular, earthquakes and their associated tsunamis shortly after such an event is recorded.</p>
+
+<p>Coordinated by the Barcelona Supercomputing Center (BSC), the eFlows4HPC consortium comprises 16 partners from seven different countries with expertise in technical aspects:  supercomputing and acceleration, workflow management and orchestration, machine learning, big data analytics, data management, and storage; together with expertise in the pillar workflows’ areas: manufacturing, climate, urgent computing.</p>
+
+<p>The initial results of the project are available under the project website in its deliverable section (see <a href="https://eflows4hpc.eu/deliverables/">https://eflows4hpc.eu/deliverables/</a>). The source code and documentation are publicly available as well (see <a href="https://github.com/eflows4hpc">https://github.com/eflows4hpc</a> and <a href="https://eflows4hpc.readthedocs.io/en/latest/">https://eflows4hpc.readthedocs.io/en/latest/</a>).</p>
+
+            </div>
+        </div>
+    </main>
+
+</article>
+        </div>
+
+        <section id="sidebar">
+
+    <!-- Intro -->
+    <section id="intro">
+        <a href="/" class="logo"><img src="/images/workflows-community-logo.png" alt="" style="max-width: 20em" /></a>
+
+        <ul class="icons">
+            <li>
+                <a href="https://www.youtube.com/channel/UCqCnXqWqKe9vF6cqKOj1CYw" target="_blank"
+                    class="fa-stack fa-2x" style="font-size: 1.5em">
+                    <i class="fa fa-circle fa-stack-2x" style="color: #fff"></i>
+                    <i class="fab fa-youtube fa-stack-1x"></i>
+                </a>
+            </li>
+            <li>
+                <a href="mailto:contact@workflows.community" class="fa-stack fa-2x" style="font-size: 1.5em">
+                    <i class="fa fa-circle fa-stack-2x" style="color: #fff"></i>
+                    <i class="fa fa-envelope fa-stack-1x"></i>
+                </a>
+            </li>
+            <li>
+                <a href="http://twitter.com/WorkflowsCI" target="_blank" class="fa-stack fa-2x"
+                    style="font-size: 1.5em">
+                    <i class="fa fa-circle fa-stack-2x" style="color: #fff"></i>
+                    <i class="fab fa-twitter fa-stack-1x"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://join.slack.com/t/workflowscommunity/shared_invite/zt-14l57ruzl-cCue46GoRt_4txhXfYHrtA"
+                    target="_blank" class="fa-stack fa-2x" style="font-size: 1.5em">
+                    <i class="fa fa-circle fa-stack-2x" style="color: #fff"></i>
+                    <i class="fab fa-slack fa-stack-1x"></i>
+                </a>
+            </li>
+        </ul>
+
+        <!-- HTML search field -->
+<div class="search-container">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <input type="text" id="search-input" class="input-field" placeholder="Search" autofocus>
+    <div id="results-container"></div>
+</div>
+
+<!-- Grab search-script.js -->
+<script src="/assets/js/search.script.js" type="text/javascript"></script>
+
+<!-- Configuration -->
+<script>
+    SimpleJekyllSearch({
+        searchInput: document.getElementById("search-input"),
+        resultsContainer: document.getElementById("results-container"),
+        json: "/search.json",
+        searchResultTemplate: `
+            <a href="{url}">
+                {category}
+                <strong>{title}</strong><br/>
+                {description}
+            </a>
+        `,
+        templateMiddleware: function (prop, value, template) {
+            if (prop == "description") {
+                if (value.length > 0) {
+                    value = '<span class="search-desc">' + value + '</span>'
+                    if (value.length > 75) {
+                        return value.substring(0, 75) + "...";
+                    }
+                } else {
+                    return ""
+                }
+            }
+            if (prop == "category") {
+                let color = "f2b3a2"
+                if (value == "story") {
+                    color = "D89398"
+                } else if (value == "event") {
+                    color = "85BCC2"
+                } else if (value == "job") {
+                    color = "6689BA"
+                }
+                return '<span class="search-cat" style="background-color: #' + color + ';">' + value + '</span>'
+            }
+        },
+        noResultsText: '<span style="padding: 1em; line-height: 2em">No results found</span>'
+    })
+</script>
+
+    </section>
+
+    <!-- About -->
+    <div class="blurb">
+        <p>The goal of the <strong>Workflows Community Initiative (WCI)</strong> is to bring the workflows community
+            together (<i>users, developers, researchers</i>, and <i>facilities</i>) to provide community resources and
+            capabilities to enable scientists and workflow systems developers to discover software products, related
+            efforts, events, technical reports, etc. and engage in community-wide efforts to tackle workflows grand
+            challenges.
+        </p>
+    </div>
+
+    <!-- Tweets -->
+    <section>
+        <div class="mini-post" style="padding: 0">
+            <div class="twitter-header">
+                <i class="fab fa-twitter"></i>&nbsp;&nbsp;&nbsp;@WorkflowsCI
+            </div>
+            <a class="twitter-timeline" data-lang="en" data-height="1500" data-width="100%" data-theme="light"
+                data-chrome="nofooter noheader" href="https://twitter.com/WorkflowsCI">Tweets by WorkflowsCI</a>
+            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+    </section>
+
+    <section id="footer">
+    <p class="copyright" style="margin-bottom: 1em">
+        &copy;2022 Workflows.Community Initiative
+    </p>
+    <ul class="icons" style="margin-top: 0">
+        <li>
+            <a href="https://www.youtube.com/channel/UCqCnXqWqKe9vF6cqKOj1CYw" target="_blank"
+                class="fa-stack fa-2x" style="font-size: 1em">
+                <i class="fa fa-circle fa-stack-2x" style="color: #fff"></i>
+                <i class="fab fa-youtube fa-stack-1x"></i>
+            </a>
+        </li>
+        <li>
+            <a href="mailto:contact@workflows.community" class="fa-stack fa-2x" style="font-size: 1em">
+                <i class="fa fa-circle fa-stack-2x" style="color: #fff"></i>
+                <i class="fa fa-envelope fa-stack-1x"></i>
+            </a>
+        </li>
+        <li>
+            <a href="http://twitter.com/WorkflowsCI" target="_blank" class="fa-stack fa-2x"
+                style="font-size: 1em">
+                <i class="fa fa-circle fa-stack-2x" style="color: #fff"></i>
+                <i class="fab fa-twitter fa-stack-1x"></i>
+            </a>
+        </li>
+        <li>
+            <a href="https://join.slack.com/t/workflowscommunity/shared_invite/zt-14l57ruzl-cCue46GoRt_4txhXfYHrtA"
+                target="_blank" class="fa-stack fa-2x" style="font-size: 1em">
+                <i class="fa fa-circle fa-stack-2x" style="color: #fff"></i>
+                <i class="fab fa-slack fa-stack-1x"></i>
+            </a>
+        </li>
+    </ul>
+    
+    <p class="copyright" style="font-size: 0.6em; margin-top: 2em !important;">
+    </p>
+    <p class="copyright" style="font-size: 0.6em">
+    </p>
+</section>
+
+
+</section>
+    </div>
+
+    <!-- Scripts -->
+    <script src="/assets/js/jquery.min.js"></script>
+    <script src="/assets/js/browser.min.js"></script>
+    <script src="/assets/js/breakpoints.min.js"></script>
+    <script src="/assets/js/util.js"></script>
+    <script src="/assets/js/main.js"></script>
+
+</body>
+
+</html>

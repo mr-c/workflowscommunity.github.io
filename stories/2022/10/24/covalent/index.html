@@ -1,0 +1,421 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <title> Covalent: Workflow Orchestration on Highly Heterogeneous Infrastructure - Workflows Community Initiative</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+<meta name="keywords" content="workflow, hpc, science, exascale, fair, reproducibility" />
+<meta name="author" content="Rafael Ferreira da Silva" />
+<meta name="author" content="Henri Casanova" />
+<meta name="author" content="Kyle Chard" />
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<meta name="generator" content="Jekyll v4.2.2" />
+<meta property="og:title" content="Covalent: Workflow Orchestration on Highly Heterogeneous Infrastructure" />
+<meta name="author" content="Will Cunningham" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Workflow orchestration is a common operations framework in the field of distributed computing. As high performance computing (HPC) becomes more distributed and incorporates a greater degree of heterogeneous technologies, workflow orchestration will no doubt become a common practice in this space, as it has in adjacent spaces such as Machine Learning Operations (MLOps) and more recently in quantum computing. Users with repeatable sets of interdependent tasks (workflows) may wish to run them on a time-based schedule or, more commonly in research and development, they may wish to iterate on the design of one or more experimental workflows. This iteration can include different algorithms, different model hyperparameters, different compute backends, or even different compute frameworks entirely. With these options, it is increasingly possible to construct and optimize workflows which span across multiple on-premises supercomputers, multiple clouds, and even emerging technologies such as quantum computers." />
+<meta property="og:description" content="Workflow orchestration is a common operations framework in the field of distributed computing. As high performance computing (HPC) becomes more distributed and incorporates a greater degree of heterogeneous technologies, workflow orchestration will no doubt become a common practice in this space, as it has in adjacent spaces such as Machine Learning Operations (MLOps) and more recently in quantum computing. Users with repeatable sets of interdependent tasks (workflows) may wish to run them on a time-based schedule or, more commonly in research and development, they may wish to iterate on the design of one or more experimental workflows. This iteration can include different algorithms, different model hyperparameters, different compute backends, or even different compute frameworks entirely. With these options, it is increasingly possible to construct and optimize workflows which span across multiple on-premises supercomputers, multiple clouds, and even emerging technologies such as quantum computers." />
+<meta property="og:site_name" content="Workflows Community Initiative" />
+<meta property="og:image" content="/images/stories/covalent-02.png" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2022-10-24T00:00:00+00:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:image" content="/images/stories/covalent-02.png" />
+<meta property="twitter:title" content="Covalent: Workflow Orchestration on Highly Heterogeneous Infrastructure" />
+<meta name="twitter:site" content="@WorkflowsCI" />
+<meta name="twitter:creator" content="@Will Cunningham" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Will Cunningham"},"dateModified":"2022-10-24T00:00:00+00:00","datePublished":"2022-10-24T00:00:00+00:00","description":"Workflow orchestration is a common operations framework in the field of distributed computing. As high performance computing (HPC) becomes more distributed and incorporates a greater degree of heterogeneous technologies, workflow orchestration will no doubt become a common practice in this space, as it has in adjacent spaces such as Machine Learning Operations (MLOps) and more recently in quantum computing. Users with repeatable sets of interdependent tasks (workflows) may wish to run them on a time-based schedule or, more commonly in research and development, they may wish to iterate on the design of one or more experimental workflows. This iteration can include different algorithms, different model hyperparameters, different compute backends, or even different compute frameworks entirely. With these options, it is increasingly possible to construct and optimize workflows which span across multiple on-premises supercomputers, multiple clouds, and even emerging technologies such as quantum computers.","headline":"Covalent: Workflow Orchestration on Highly Heterogeneous Infrastructure","image":"/images/stories/covalent-02.png","mainEntityOfPage":{"@type":"WebPage","@id":"/stories/2022/10/24/covalent/"},"url":"/stories/2022/10/24/covalent/"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+<!-- Prefetch DNS for faster page speed -->
+<link rel="dns-prefetch" href="//fonts.googleapis.com" />
+<link rel="dns-prefetch" href="//google-analytics.com" />
+<link rel="dns-prefetch" href="//www.google-analytics.com" />
+<link rel="dns-prefetch" href="//maxcdn.bootstrapcdn.com" />
+<link rel="dns-prefetch" href="//ajax.googleapis.com" />
+<link rel="dns-prefetch" href="//fonts.gstatic.com" />
+
+<!-- icons -->
+<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" href="/favicon.ico" type="image/x-icon" />
+
+<!-- stylesheets -->
+<link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
+<link rel="stylesheet" href="/assets/css/fontawesome-all.min.css" />
+<link rel="stylesheet" href="/assets/css/main.css" />
+
+<!-- scripts -->
+<script src="/assets/js/jquery.min.js"></script>
+<script src="/assets/js/jquery.countTo.js"></script>
+<script src="/assets/js/bootstrap.min.js"></script>
+
+<script type="text/javascript">
+    $('.dropdown-toggle').dropdown();
+</script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-271163E6PP"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-271163E6PP');
+</script>
+
+<!-- MapBox -->
+<script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
+<link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
+
+</head>
+
+<body class="is-preload">
+    <!-- Wrapper -->
+    <div id="wrapper">
+        <header id="header">
+    <h1><a href="/"><img src="/images/workflows-community-logo-horizontal.png" style="width: 10em" alt="" /></a></h1>
+    <nav class="links">
+        <ul>
+            <li class="dropdown">
+                <a class="dropdown-toggle" href="#" id="workflowsDropdown" role="button" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    Resources
+                </a>
+                <div class="dropdown-menu" aria-labelledby="workflowsDropdown">
+                    <a class="dropdown-item" href="/systems">
+                        <i class="fas fa-dot-circle color-1"></i> Workflow Systems</a>
+                    <a class="dropdown-item" href="/registries">
+                        <i class="fas fa-dot-circle color-2"></i> Workflow Registries</a>
+                    <a class="dropdown-item" href="/education">
+                        <i class="fas fa-dot-circle color-6"></i> Education and Training</a>
+                    <a class="dropdown-item" href="/reports">
+                        <i class="fas fa-dot-circle color-7"></i> Reports</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a class="dropdown-toggle" href="#" id="researchDropdown" role="button" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    Research
+                </a>
+                <div class="dropdown-menu" aria-labelledby="researchDropdown">
+                    <!--
+                    <a class="dropdown-item" href="/task_forces">
+                        <i class="fas fa-dot-circle color-3"></i> Task Forces</a>
+                    -->
+                    <a class="dropdown-item" href="/groups">
+                        <i class="fas fa-dot-circle color-3"></i> Working Groups</a>
+                    <a class="dropdown-item" href="/frameworks">
+                        <i class="fas fa-dot-circle color-5"></i> Research Frameworks</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a class="dropdown-toggle" href="#" id="eventsDropdown" role="button" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    Events
+                </a>
+                <div class="dropdown-menu" aria-labelledby="eventsDropdown">
+                    <a class="dropdown-item" href="/summits">
+                        <i class="fas fa-dot-circle color-1"></i> Workflows Community Summits</a>
+                    <a class="dropdown-item" href="/bof">
+                        <i class="fas fa-dot-circle color-6"></i> Birds of a Feather (BoF)</a>
+                    <a class="dropdown-item" href="/events">
+                        <i class="fas fa-dot-circle color-7"></i> Workflows-Related Events</a>
+                </div>
+            </li>
+            <li><a href="/members" title="List of Members">Members</a></li>
+            <li><a href="/jobs" title="Jobs Market">Jobs</a></li>
+            <li><a href="/about" title="Who are we?">About</a></li>
+        </ul>
+    </nav>
+    <nav class="main">
+        <ul>
+            <li>
+                <a href="/contact" class="getinvolved">Get Involved!</a>
+            </li>
+            <li class="menu">
+                <a class="fa-bars" href="#menu">Menu</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+        <!-- Menu -->
+<section id="menu">
+
+    <!-- Links -->
+    <section>
+        <ul class="links">
+            <li>
+                <a href="/systems">
+                    <h3>Workflow Systems</h3>
+                </a>
+            </li>
+            <li>
+                <a href="/registries">
+                    <h3>Workflow Registries</h3>
+                </a>
+            </li>
+            <!--
+            <li>
+                <a href="/task_forces">
+                    <h3>Task Forces</h3>
+                </a>
+            </li>
+            -->
+            <li>
+                <a href="/groups">
+                    <h3>Working Groups</h3>
+                </a>
+            </li>
+            <li>
+                <a href="/frameworks">
+                    <h3>Research Frameworks</h3>
+                </a>
+            </li>
+            <li>
+                <a href="/summits">
+                    <h3>Workflows Community Summits</h3>
+                </a>
+            </li>
+            <li>
+                <a href="/events">
+                    <h3>Workflow-Related Events</h3>
+                </a>
+            </li>
+            <li>
+                <a href="/members">
+                    <h3>Members</h3>
+                </a>
+            </li>
+            <li>
+                <a href="/jobs">
+                    <h3>Jobs</h3>
+                </a>
+            </li>
+            <li>
+                <a href="/about">
+                    <h3>About</h3>
+                </a>
+            </li>
+        </ul>
+    </section>
+
+</section>
+
+        <!-- Main -->
+        <div id="main">
+            <article class="post">
+    <header>
+        <div class="title" style="margin-bottom: -1em">
+            <h2 style="margin-bottom: 0.5em">Covalent: Workflow Orchestration on Highly Heterogeneous Infrastructure</h2>            
+        </div>
+        <div class="meta">
+            <div class="story-date">
+                <span class="month-day">Oct 24</span><br />
+                <span class="year">2022</span>
+            </div>
+            <div class="story-author">
+                <img src="/images/stories/cunningham.jpg" alt="Will Cunningham" /><br />
+                Will Cunningham<br />
+                <span class="institution">Agnostiq</span>
+            </div>
+            
+            
+        </div>
+    </header>
+
+    <main class="story-content">
+        <div class="row">
+            <div class="col-sm-12 col-md-12">
+                <p>Workflow orchestration is a common operations framework in the field of distributed computing.  As high performance computing (HPC) becomes more distributed and incorporates a greater degree of heterogeneous technologies, workflow orchestration will no doubt become a common practice in this space, as it has in adjacent spaces such as Machine Learning Operations (MLOps) and more recently in quantum computing. Users with repeatable sets of interdependent tasks (workflows) may wish to run them on a time-based schedule or, more commonly in research and development, they may wish to iterate on the design of one or more experimental workflows. This iteration can include different algorithms, different model hyperparameters, different compute backends, or even different compute frameworks entirely.  With these options, it is increasingly possible to construct and optimize workflows which span across multiple on-premises supercomputers, multiple clouds, and even emerging technologies such as quantum computers.</p>
+
+<p>While so many options are a delight to workflow architects, they pose real challenges for operations. How are credentials managed and conveyed across such systems?  How do researchers ensure workflow data pipelines are efficient and secure?  How are logical tasks broken apart and rejoined (“packed”) to optimize information transfer across physically distant systems?  When something fails, how easy is it to trace back errors across frameworks and to re-run portions of a workflow?  There are certainly many other such challenges that workflow practitioners are familiar with.</p>
+
+<p><img src="/images/stories/covalent-01.png" alt="Covalent" width="60%" style="padding: 1em" /><br />
+<span class="caption">Covalent unifies tasks written in different languages and with heterogeneous compute requirements.</span></p>
+
+<p><a href="https://covalent.xyz">Covalent</a> is Agnostiq’s answer to these challenges.  With roots in quantum computing applications, Agnostiq researchers quickly learned that the operational challenges in quantum research today consume the majority of a project’s time. Covalent was developed primarily to manage experiments and facilitate access to cloud compute resources for researchers with little or no cloud engineering background. Today, users can interact with a large variety of cloud resources – including Batch, Kubernetes, and Braket Hybrid Jobs – using Covalent’s <a href="https://github.com/agnostiqhq/covalent-aws-plugins">AWS Plugins</a> package.</p>
+
+<p>The release of a <a href="https://github.com/agnostiqhq/covalent-slurm-plugin">Slurm plugin</a> further enabled our team to interact with partners’ supercomputing resources, in particular in federated or hybrid-cloud configurations. Such flexibility is increasingly in demand as scalability begins to hit a power-consumption barrier, and as more HPC vendors and users begin to incorporate cloud and other distributed compute platforms. As we realized these tools can benefit more than our organization, we decided to transform Covalent into a product in its own right, and to open-source the software on <a href="https://github.com/agnostiqhq/covalent/">GitHub</a> in January 2022.</p>
+
+<p><img src="/images/stories/covalent-02.png" alt="Covalent" width="100%" /><br />
+<span class="caption">Covalent’s user interface enables users to easily visualize and interact with distributed workflows.</span></p>
+
+<p>Quantum computing, of course, introduces its own set of unique needs.  Firmly rooted as a heterogeneous technology from the outset, quantum computers today mainly run Noisy Intermediate-Scale Quantum (NISQ) algorithms which are variational, or hybrid, in nature.  These algorithms require classical and quantum resources working in tandem.  Whereas traditional HPC workflows often involve loosely coupled tasks spanning many hours or days in a single location, variational quantum workflows are tightly coupled, with timescales sometimes under a single second per task. Since classical and quantum resources may not necessarily be physically located in the same data center, most of the execution time may in fact arise due to data transfer and requeuing – often thousands of times per workflow.  A remedy to this requires collaboration among many parties in order to optimize the user experience and maximize hardware occupancy.  With Covalent at the center of this conversation, Agnostiq hopes to stimulate a new discussion around how we think about workflows in highly heterogeneous environments.</p>
+
+<p>Users and providers interested in learning more about Covalent can view the source code on <a href="https://github.com/agnostiqhq/covalent/">GitHub</a>, join the Covalent <a href="https://join.slack.com/t/covalentworkflows/shared_invite/zt-1ew7f2rfk-dKSXVQmRniu5mQW4Z_eQuw">Slack</a> channel, follow us on <a href="https://twitter.com/covalentxyz">Twitter</a>, or reach out to the team for more information at <a href="mailto:contact@agnostiq.ai">contact@agnostiq.ai</a>.  We also welcome open-source contributions and discussions on GitHub.  If you like what we are up to, please show your support by starring our repository.</p>
+
+            </div>
+        </div>
+    </main>
+
+</article>
+        </div>
+
+        <section id="sidebar">
+
+    <!-- Intro -->
+    <section id="intro">
+        <a href="/" class="logo"><img src="/images/workflows-community-logo.png" alt="" style="max-width: 20em" /></a>
+
+        <ul class="icons">
+            <li>
+                <a href="https://www.youtube.com/channel/UCqCnXqWqKe9vF6cqKOj1CYw" target="_blank"
+                    class="fa-stack fa-2x" style="font-size: 1.5em">
+                    <i class="fa fa-circle fa-stack-2x" style="color: #fff"></i>
+                    <i class="fab fa-youtube fa-stack-1x"></i>
+                </a>
+            </li>
+            <li>
+                <a href="mailto:contact@workflows.community" class="fa-stack fa-2x" style="font-size: 1.5em">
+                    <i class="fa fa-circle fa-stack-2x" style="color: #fff"></i>
+                    <i class="fa fa-envelope fa-stack-1x"></i>
+                </a>
+            </li>
+            <li>
+                <a href="http://twitter.com/WorkflowsCI" target="_blank" class="fa-stack fa-2x"
+                    style="font-size: 1.5em">
+                    <i class="fa fa-circle fa-stack-2x" style="color: #fff"></i>
+                    <i class="fab fa-twitter fa-stack-1x"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://join.slack.com/t/workflowscommunity/shared_invite/zt-14l57ruzl-cCue46GoRt_4txhXfYHrtA"
+                    target="_blank" class="fa-stack fa-2x" style="font-size: 1.5em">
+                    <i class="fa fa-circle fa-stack-2x" style="color: #fff"></i>
+                    <i class="fab fa-slack fa-stack-1x"></i>
+                </a>
+            </li>
+        </ul>
+
+        <!-- HTML search field -->
+<div class="search-container">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <input type="text" id="search-input" class="input-field" placeholder="Search" autofocus>
+    <div id="results-container"></div>
+</div>
+
+<!-- Grab search-script.js -->
+<script src="/assets/js/search.script.js" type="text/javascript"></script>
+
+<!-- Configuration -->
+<script>
+    SimpleJekyllSearch({
+        searchInput: document.getElementById("search-input"),
+        resultsContainer: document.getElementById("results-container"),
+        json: "/search.json",
+        searchResultTemplate: `
+            <a href="{url}">
+                {category}
+                <strong>{title}</strong><br/>
+                {description}
+            </a>
+        `,
+        templateMiddleware: function (prop, value, template) {
+            if (prop == "description") {
+                if (value.length > 0) {
+                    value = '<span class="search-desc">' + value + '</span>'
+                    if (value.length > 75) {
+                        return value.substring(0, 75) + "...";
+                    }
+                } else {
+                    return ""
+                }
+            }
+            if (prop == "category") {
+                let color = "f2b3a2"
+                if (value == "story") {
+                    color = "D89398"
+                } else if (value == "event") {
+                    color = "85BCC2"
+                } else if (value == "job") {
+                    color = "6689BA"
+                }
+                return '<span class="search-cat" style="background-color: #' + color + ';">' + value + '</span>'
+            }
+        },
+        noResultsText: '<span style="padding: 1em; line-height: 2em">No results found</span>'
+    })
+</script>
+
+    </section>
+
+    <!-- About -->
+    <div class="blurb">
+        <p>The goal of the <strong>Workflows Community Initiative (WCI)</strong> is to bring the workflows community
+            together (<i>users, developers, researchers</i>, and <i>facilities</i>) to provide community resources and
+            capabilities to enable scientists and workflow systems developers to discover software products, related
+            efforts, events, technical reports, etc. and engage in community-wide efforts to tackle workflows grand
+            challenges.
+        </p>
+    </div>
+
+    <!-- Tweets -->
+    <section>
+        <div class="mini-post" style="padding: 0">
+            <div class="twitter-header">
+                <i class="fab fa-twitter"></i>&nbsp;&nbsp;&nbsp;@WorkflowsCI
+            </div>
+            <a class="twitter-timeline" data-lang="en" data-height="1500" data-width="100%" data-theme="light"
+                data-chrome="nofooter noheader" href="https://twitter.com/WorkflowsCI">Tweets by WorkflowsCI</a>
+            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+    </section>
+
+    <section id="footer">
+    <p class="copyright" style="margin-bottom: 1em">
+        &copy;2022 Workflows.Community Initiative
+    </p>
+    <ul class="icons" style="margin-top: 0">
+        <li>
+            <a href="https://www.youtube.com/channel/UCqCnXqWqKe9vF6cqKOj1CYw" target="_blank"
+                class="fa-stack fa-2x" style="font-size: 1em">
+                <i class="fa fa-circle fa-stack-2x" style="color: #fff"></i>
+                <i class="fab fa-youtube fa-stack-1x"></i>
+            </a>
+        </li>
+        <li>
+            <a href="mailto:contact@workflows.community" class="fa-stack fa-2x" style="font-size: 1em">
+                <i class="fa fa-circle fa-stack-2x" style="color: #fff"></i>
+                <i class="fa fa-envelope fa-stack-1x"></i>
+            </a>
+        </li>
+        <li>
+            <a href="http://twitter.com/WorkflowsCI" target="_blank" class="fa-stack fa-2x"
+                style="font-size: 1em">
+                <i class="fa fa-circle fa-stack-2x" style="color: #fff"></i>
+                <i class="fab fa-twitter fa-stack-1x"></i>
+            </a>
+        </li>
+        <li>
+            <a href="https://join.slack.com/t/workflowscommunity/shared_invite/zt-14l57ruzl-cCue46GoRt_4txhXfYHrtA"
+                target="_blank" class="fa-stack fa-2x" style="font-size: 1em">
+                <i class="fa fa-circle fa-stack-2x" style="color: #fff"></i>
+                <i class="fab fa-slack fa-stack-1x"></i>
+            </a>
+        </li>
+    </ul>
+    
+    <p class="copyright" style="font-size: 0.6em; margin-top: 2em !important;">
+    </p>
+    <p class="copyright" style="font-size: 0.6em">
+    </p>
+</section>
+
+
+</section>
+    </div>
+
+    <!-- Scripts -->
+    <script src="/assets/js/jquery.min.js"></script>
+    <script src="/assets/js/browser.min.js"></script>
+    <script src="/assets/js/breakpoints.min.js"></script>
+    <script src="/assets/js/util.js"></script>
+    <script src="/assets/js/main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,487 @@
+[
+  
+    {
+      "title"       : "Apollo Runtime System",
+      "url"         : "/systems/EE-Demo/",
+      "description" : "A runtime system for the orchestration of workflows across the cloud-edge-Iot continuum.",
+      "tags"        : "",
+      "category"    : "system"
+    },
+  
+    {
+      "title"       : "AiiDA",
+      "url"         : "/systems/aiida-core/",
+      "description" : "A workflow manager for computational science with a strong focus on provenance, performance and extensibility.",
+      "tags"        : "aiida, computational-science, data-provenance, database, provenance, scheduler, ssh, workflow, workflow-engine,  workflows",
+      "category"    : "system"
+    },
+  
+    {
+      "title"       : "Makeflow",
+      "url"         : "/systems/cctools/",
+      "description" : "Makeflow is a workflow system for parallel and distributed computing that uses a language very similar to Make.",
+      "tags"        : "",
+      "category"    : "system"
+    },
+  
+    {
+      "title"       : "Common Workflow Language",
+      "url"         : "/systems/common-workflow-language/",
+      "description" : "Interoperable workflow execution of containerized command line tools",
+      "tags"        : "common-workflow-language, commonwl, containers, cwl, science, sciworkflows, workflow,  workflows",
+      "category"    : "system"
+    },
+  
+    {
+      "title"       : "PyCOMPSs/COMPSs",
+      "url"         : "/systems/compss/",
+      "description" : "Easy task-based parallelization and efficient execution in distributed infrastructures.",
+      "tags"        : "c, distributed-computing, docker, hpc, java, pipeline-framework, python, singularity, slurm, workflow-management-system,  workflows",
+      "category"    : "system"
+    },
+  
+    {
+      "title"       : "Covalent",
+      "url"         : "/systems/covalent/",
+      "description" : "Distributed workflows for quantum and HPC",
+      "tags"        : "covalent, data-pipeline, data-science, etl, hacktoberfest, hpc, hpc-applications, machine-learning, machinelearning, machinelearning-python, orchestration, parallelization, pipelines, python, quantum, quantum-computing, quantum-machine-learning, workflow, workflow-automation,  workflow-management",
+      "category"    : "system"
+    },
+  
+    {
+      "title"       : "cromwell",
+      "url"         : "/systems/cromwell/",
+      "description" : "Scientific workflow engine designed for simplicity &amp; scalability. Trivially transition between one off use cases to massive scale production environments",
+      "tags"        : "application, bioinformatics, cloud, common-workflow-language, containers, cwl, docker, executor, ga4gh, hpc, scala, wdl, workflow, workflow-description-language,  workflow-execution",
+      "category"    : "system"
+    },
+  
+    {
+      "title"       : "dask",
+      "url"         : "/systems/dask/",
+      "description" : "Parallel computing with task scheduling",
+      "tags"        : "dask, numpy, pandas, pydata, python, scikit-learn,  scipy",
+      "category"    : "system"
+    },
+  
+    {
+      "title"       : "fireworks",
+      "url"         : "/systems/fireworks/",
+      "description" : "The Fireworks Workflow Management Repo.",
+      "tags"        : "",
+      "category"    : "system"
+    },
+  
+    {
+      "title"       : "galaxy",
+      "url"         : "/systems/galaxy/",
+      "description" : "Data intensive science for everyone.",
+      "tags"        : "bioinformatics, dna, docker, genomics, hacktoberfest, ngs, pipeline, science, sequencing, usegalaxy, workflow,  workflow-engine",
+      "category"    : "system"
+    },
+  
+    {
+      "title"       : "Geoweaver",
+      "url"         : "/systems/geoweaver/",
+      "description" : "a lightweight workflow software to easily orchestrate pipelines from Python and shell scripts and preserve history of every execution",
+      "tags"        : "ai, docker, earth-science, esip-lab, google-earth-engine, jupyter-hub, jupyter-lab, jupyter-notebook, kubernetes, pangeo, pipeline, pipeline-framework, proxy, scientific-computing, workflow, workflow-engine, workflow-management,  workflow-tool",
+      "category"    : "system"
+    },
+  
+    {
+      "title"       : "libEnsemble",
+      "url"         : "/systems/libensemble/",
+      "description" : "Tool for running dynamic ensembles.",
+      "tags"        : "",
+      "category"    : "system"
+    },
+  
+    {
+      "title"       : "Maestro Workflow Conductor",
+      "url"         : "/systems/maestrowf/",
+      "description" : "Orchestrate your HPC workflows with ease",
+      "tags"        : "hpc, python, radiuss, science-research, simulation-study, workflow, workflow-processes,  workflows",
+      "category"    : "system"
+    },
+  
+    {
+      "title"       : "Merlin",
+      "url"         : "/systems/merlin/",
+      "description" : "Enabling Machine Learning HPC Workflows",
+      "tags"        : "big-data, celery-workers, hpc, machine-learning, radiuss, redis-server, simulation, workflow,  workflows",
+      "category"    : "system"
+    },
+  
+    {
+      "title"       : "mlflow",
+      "url"         : "/systems/mlflow/",
+      "description" : "Open source platform for the machine learning lifecycle",
+      "tags"        : "ai, apache-spark, machine-learning, ml, mlflow,  model-management",
+      "category"    : "system"
+    },
+  
+    {
+      "title"       : "Nextflow",
+      "url"         : "/systems/nextflow/",
+      "description" : "A DSL for data-driven computational pipelines",
+      "tags"        : "aws, bioinformatics, cloud, dataflow, docker, groovy, hello, hpc, nextflow, pipeline, pipeline-framework, reproducible-research, reproducible-science, sge, singularity, singularity-containers, slurm,  workflow-engine",
+      "category"    : "system"
+    },
+  
+    {
+      "title"       : "Parsl",
+      "url"         : "/systems/parsl/",
+      "description" : "Productive parallel programming in Python",
+      "tags"        : "hacktoberfest",
+      "category"    : "system"
+    },
+  
+    {
+      "title"       : "pegasus",
+      "url"         : "/systems/pegasus/",
+      "description" : "Pegasus Workflow Management System - Automate, recover, and debug scientific computations.",
+      "tags"        : "bioinformatics, distributed-systems, hpc, workflow,  workflow-management-system",
+      "category"    : "system"
+    },
+  
+    {
+      "title"       : "radical.entk",
+      "url"         : "/systems/radical.entk/",
+      "description" : "The RADICAL Ensemble Toolkit",
+      "tags"        : "",
+      "category"    : "system"
+    },
+  
+    {
+      "title"       : "SciPipe",
+      "url"         : "/systems/scipipe/",
+      "description" : "Robust, flexible and resource-efficient pipelines using Go and the commandline.",
+      "tags"        : "bioinformatics, bioinformatics-pipeline, cheminformatics, dataflow, fbp, go, pipeline, scientific-workflows, scipipe, workflow,  workflow-engine",
+      "category"    : "system"
+    },
+  
+    {
+      "title"       : "Snakemake",
+      "url"         : "/systems/snakemake/",
+      "description" : "This is the development home of the workflow management system Snakemake. For general information, see",
+      "tags"        : "reproducibility, snakemake,  workflow-management",
+      "category"    : "system"
+    },
+  
+    {
+      "title"       : "StreamFlow",
+      "url"         : "/systems/streamflow/",
+      "description" : "Towards Cloud-HPC Continuum",
+      "tags"        : "workflows",
+      "category"    : "system"
+    },
+  
+    {
+      "title"       : "swift-t",
+      "url"         : "/systems/swift-t/",
+      "description" : "Swift/T: High Performance Parallel Scripting Language",
+      "tags"        : "",
+      "category"    : "system"
+    },
+  
+    {
+      "title"       : "WATTS",
+      "url"         : "/systems/watts/",
+      "description" : "Workflow and Template Toolkit for Simulation",
+      "tags"        : "nuclear-energy, python, simulation,  templates",
+      "category"    : "system"
+    },
+  
+  
+    {
+      "title"       : "Software Architect",
+      "url"         : "/jobs/agnostiq_software_architect/",
+      "description" : "OverviewAgnostiq is developing Covalent, an open-source workflow orchestration platform designed to help users manage and execute tasks in heterogeneous computing environments. You can learn more about the project at: https://github.com/AgnostiqHQ/covalent.  Agnostiq is a fully distributed team with roots in Toronto and team members across Canada and the United States.As a Software Architect, you will play a significant role in the design of a variety of cutting-edge cloud computing projects that serve as an extension of Covalent, our open-source workflow management tool. In this role, you will be responsible for executing the product’s technical specifications and software stack, while ensuring its scalability for future growth. You will work closely with engineering to assist in the planning and implementation of these projects. The ideal candidate is a strategic problem solver and is comfortable in a startup environment. He/she will possess the following hard and soft skills:  Ability to see the big picture - the ideal candidate will understand how different pieces of the application stack, including the cloud components, front-end, back-end and databases fit together in a holistic manner.  Ability to work across multiple layers of the stack - the ideal candidate will be able to assess &amp;amp; evaluate the software product on both the horizontal (across technology) and vertical (across low level details to high level architecture) levels.  Interest in learning and evaluating new technologies - the ideal candidate will be a quick study, keen to assess and recommend new technologies for the application stack.  Ability to bridge product and technology - the ideal candidate will be a bridge between product and technology by virtue of their strong communication skills, and their ability to identify and articulate potential risks and impacts on product timelines.Responsibilities  Review the business/product requirements and aid in the design of our current product portfolio.  Document, diagram and validate your technical vision at a high level, and present to key stakeholders.  Evaluate and recommend tools, technologies, and processes to ensure the highest quality product outcomes.  Understand concepts surrounding our SaaS services, including but not limited to, cloud infrastructure, APIs, microservices architecture, scalability, performance, data storage, serverless computing, front-end etc.  Maintain constant alignment with Engineering to ensure the implementation coincides with high level specifications and technical design by scoping the required issues and epics.  Supporting the engineering team if required by adapting into a hands-on developer. Some of the technologies we use: Python, React, Terraform, AWS Cloud.  Understand product requirements, breaking complex features down into achievable engineering goals.  Continuously improve and optimize the application’s SDLC, architecture, and tech stack over time.Must-haves  5+ years of experience as a software engineer or technical architect  Strong expertise in following technologies - Python, Bash, Linux, AWS cloud technology, web technologies, databases, API development, Terraform, React  General experience with DevOps and CI/CD practices  Strong communication, presentation and organizational skills  Ability to adapt to fast changing environments  Experience and understanding of how modern web applications are developed and deployed in distributed cloud-based platforms  Experience architecting SaaS productsNice-to-haves  Leadership experience and ability to interact with peers and clients at all levels  Experience with architecting software products from inception to launch is a big plus  Experience engaging with the open-source software communityBenefits  Equity Participation  Comprehensive healthcare benefits  Home office allowance",
+      "category"    : "job"
+    },
+  
+    {
+      "title"       : "Postdoctoral Appointee - High-Performance Computing System and AI for X-Ray Science",
+      "url"         : "/jobs/anl_postdoctoral_hpc/",
+      "description" : "OverviewWe are currently seeking a Postdoctoral Researcher to work at the intersection of machine learning and high-performance computing(HPC) systems, and develop artificial intelligence (AI) and machine learning (ML) solutions for DOE scientific user facilities. In particular, the project aims to develop AI/ML models and infrastructure to extract  features in X-ray detector data at the Advanced Photon Source (APS) at Argonne and Linac Coherent Light Source (LCLS) at SLAC. Because such models can run at high speeds, thanks to advances in AI  accelerators, it becomes feasible to extract salient information from in-flight data, in real time, and thus both enabling fast feedback and reducing downstream computational burden.In this role you will conduct cutting-edge research in data science and deep learning applied to scientific problems in X-ray science, and play a key roles in developing physics-based AI/ML models, developing workflow and implement rapid ML model training on data center AI systems (e.g., ALCF AI Testbed and Argonne’s Aurora exascale supercomputer), end-to-end model training workflows and explore AI accelerators for simulation applications.Position Requirements  Recent PhD (typically completed within 0-3 years) in a computer science, physical sciences or engineering or related field.  Comprehensive experience programming in one or more programming languages, such as Python.  Experience with machine learning methods and deep learning frameworks, including tensorflow, pytorch.  Software development practices and techniques for computational and data-intensive science problems.  Experience in interdisciplinary research involving computer and material scientists.  Experience with applied machine learning (e.g., successful projects that used ML to resolve scientific problems).  Experience with high-performance computing and/or scientific workflow.  Exceptional communication skills, ability to communicate effectively with internal and external collaborators and ability to work in team environment.  Ability to model Argonne’s Core Values: Impact, Safety, Respect, Integrity, and Teamwork.Job FamilyPostdoctoral FamilyJob ProfilePostdoctoral AppointeeWorker TypeLong-Term (Fixed Term)Time TypeFull timeAs an equal employment opportunity and affirmative action employer, and in accordance with our core values of impact, safety, respect, integrity and teamwork, Argonne National Laboratory is committed to a diverse and inclusive workplace that fosters collaborative scientific discovery and innovation. In support of this commitment, Argonne encourages minorities, women, veterans and individuals with disabilities to apply for employment. Argonne considers all qualified applicants for employment without regard to age, ancestry, citizenship status, color, disability, gender, gender identity, gender expression, genetic information, marital status, national origin, pregnancy, race, religion, sexual orientation, veteran status or any other characteristic protected by law.Argonne employees, and certain guest researchers and contractors, are subject to particular restrictions related to participation in Foreign Government Sponsored or Affiliated Activities, as defined and detailed in United States Department of Energy Order 486.1A. You will be asked to disclose any such participation in the application phase for review by Argonne’s Legal Department.All Argonne offers of employment are contingent upon a background check that includes an assessment of criminal conviction history conducted on an individualized and case-by-case basis.  Please be advised that Argonne positions require upon hire (or may require in the future) for the individual be to obtain a government access authorization that involves additional background check requirements.  Failure to obtain or maintain such government access authorization could result in the withdrawal of a job offer or future termination of employment.Please note that all Argonne employees are required to be vaccinated against COVID-19. All successful applicants will be required to provide their COVID-19 vaccination verification as a condition of employment, subject to limited legally recognized exemptions to COVID-19 vaccination.",
+      "category"    : "job"
+    },
+  
+    {
+      "title"       : "Exascale Supercomputer Software Container Engineer (RE2)",
+      "url"         : "/jobs/bsc_exascale_research_engineer/",
+      "description" : "About BSCThe Barcelona Supercomputing Center - Centro Nacional de Supercomputación (BSC-CNS) is the leading supercomputing center in Spain. It houses MareNostrum, one of the most powerful supercomputers in Europe, and is a hosting member of the PRACE European distributed supercomputing infrastructure. The mission of BSC is to research, develop and manage information technologies in order to facilitate scientific progress. BSC combines HPC service provision and R&amp;amp;D into both computer and computational science (life, earth and engineering sciences) under one roof, and currently has over 770 staff from 55 countries.Look at the BSC experience:  BSC-CNS YouTube Channel  Let’s stay connected with BSC Folks!Context And MissionBSC is looking for a research engineer that contributes to the container support and to an ecosystem targeting RISC-V-based ISA for a European HPC accelerator. The position is funded by a project aiming to build the software infrastructure and toolchain for an FPGA-based emulator for an energy-efficient Exascale system.More specifically, the candidate will collaborate with the Workflows and Distributed Computing (WDC) group to validate container images running PyCOMPSs applications (compss.bsc.es). PyCOMPSs is a task-based programming model developed by the WDC group, that aims at easing the development of parallel applications for distributed computing. Between the applications to validate, the candidate will work with machine learning applications (dislib scripts, see dislib.bsc.es) parallelized with COMPSs. In addition, the candidate will support the whole project on its CD/CI infrastructure.Key Duties  Validation of COMPSs container images for RISC-V architecture  Validation of COMPSs applications on top of containers for RISC-V  Validate machine learning applications on the RISC-V architecture  Extend containers and the container ecosystem to RISC-V based hardware.  Build and maintain high-performance runtime frameworks, libraries, and servicesRequirementsEducation  Master in Computer Science, or related Engineering degree or equivalent level of professional experience.Essential Knowledge and Professional Experience  Experience with container technologies, such as Docker and orchestration platforms like Kubernetes.  Good knowledge of Linux OS (not necessarily all):          Linux filesystems      Image distribution      Content storage and management      Kernel and container security      Linux containerization      Additional Knowledge and Professional Experience  Knowledge on parallel and distributed computing  Experience with Continuous Integration/Continuous Deployment frameworks  Agile development and open source development, deployment, and support, including GitHub or equivalent  Open source software committer a plusCompetences  Effective communication, multitasking, and working well on collaborative designs.  Ability to think creatively.  Ability to take initiative, prioritize and work under set deadlines and pressure.  Fluency in English is essential, Spanish is welcome.Conditions  The position will be located at BSC within the Computer Sciences Department  We offer a full-time contract, a good working environment, a highly stimulating environment with state-of-the-art infrastructure, flexible working hours, extensive training plan, tickets restaurant, private health insurance, fully support to the relocation procedures  Duration: Temporary - 31/12/2023 renewable  Salary: we offer a competitive salary commensurate with the qualifications and experience of the candidate and according to the cost of living in Barcelona  Starting date: ASAPApplications procedure and processAll applications must be made through BSC website and contain:  A full CV in English including contact details  A Cover Letter with a statement of interest in English, including two contacts for further references - Applications without this document will not be consideredIn accordance with the OTM-R principles, a gender-balanced recruitment panel is formed for every vacancy at the beginning of the process. After reviewing the content of the applications, the panel will start the interviews, with at least one technical and one administrative interview. A profile questionnaire as well as a technical exercise may be required during the process.The panel will make a final decision and all candidates who had contacts with them will receive a feedback with details on the acceptance or rejection of their profile.At BSC we are seeking continuous improvement in our recruitment processes, for any suggestions or feedback/complaints about our Recruitment Processes, please contact recruitment@bsc.es.For more information follow this link.DeadlineThe vacancy will remain open until suitable candidate has been hired. Applications will be regularly reviewed and potential candidates will be contacted.OTM-R principles for selection processesBSC-CNS is committed to the principles of the Code of Conduct for the Recruitment of Researchers of the European Commission and the Open, Transparent and Merit-based Recruitment principles (OTM-R). This is applied for any potential candidate in all our processes, for example by creating gender-balanced recruitment planels and recognizing career breaks etc.BSC-CNS is an equal opportunity employer committed to diversity and inclusion. We are pleased to consider all qualified applicants for employment without regard to race, color, religion, sex, sexual orientation, gender identity, national origin, age, disability or any other basis protected by applicable state or local law.For more information follow this link.This position is reserved for candidates who meet the requirements and have the legal status of disabled persons with a degree of disability equal to or greater than 33%. In case there are no applicants with disabilities that meet the requirements, the rest of the candidates without declared disability will be evaluated.",
+      "category"    : "job"
+    },
+  
+    {
+      "title"       : "HPC Workflows Engineer (RE1)",
+      "url"         : "/jobs/bsc_workflows_engineer/",
+      "description" : "Within the Computational Earth Sciences group, the selected candidate will be part of the Models and Workflows team to develop software to run modeling experiments in Pre-Exascale High-Performance Computing facilities.The Models and Workflows team (MWT) studies and develops essential frameworks and tools to efficiently run modeling experiments on HPC facilities. It is a growing team of a dozen members with intense collaboration with the Performance and Data teams and scientific groups.The candidate will be part of an international workgroup developing modeling workflows for state-of-the-art Digital Twins. These workflows will preferably run with the Autosubmit workflow orchestrator, developed by the same team, and scale within top-notch EuroHPC Pre-Exascale systems.https://www.bsc.es/discover-bsc/organisation/scientific-structure/computational-earth-sciencesKey Duties  Develop workflow scripts and libraries to execute Earth models on state-of-the-art HPCs.  Contribute to the development and execution of automated tests.  Work within an Agile framework, attend project meetings and contribute to writing project reports.  Contribute to the porting and testing of state-of-the-art Digital Twins to Pre-Exascale systems.Requirements  Education          Having a Bachelor in Computer Science, Telecommunications, Physics or related discipline.      Having a Master’s degree will be valued.        Essential Knowledge and Professional Experience          Good development skills and experience with UNIX/LINUX environments.      Experience in Python programming and/or scripting languages (Bash).      Experience in version control in a collaborative environment, including SVN or Git.        Additional Knowledge and Professional Experience          Understanding of HPC computer architecture issues, including CPU, accelerators, memory, interconnect, parallel I/O, and computational performance in general.      Experience with coding and documentation best practices and standards.      Troubleshooting and debugging skills.      Previous experience in a scientific area related to the research position will be appreciated.      The BSC Earth Sciences department is an international and interdisciplinary environment, so the candidate must be fluent in English and have good written and verbal skills.        Competences          Earth system models are sophisticated tools and High-Performance Computers are complex systems. The candidate needs to have excellent problem-solving skills and a proactive attitude to address new challenges and perfect the current solutions so they gain reliability and efficiency.      This is a specialized position so the successful candidate is expected to have a demonstrated learning capacity and the motivation to maintain a learning progression during the contract.      The candidate will work for an international collaborative project, so it is mandatory to be able to fulfill schedules and coordinate with members from other institutions, as well as disseminate the advances in international workshops.      Conditions  The position will be located at BSC within the Earth Sciences Department  We offer a full-time contract, a good working environment, a highly stimulating environment with state-of-the-art infrastructure, flexible working hours, extensive training plan, tickets restaurant, private health insurance, fully support to the relocation procedures  Duration: Open-ended contract due to technical and scientific activities linked to the project and budget duration  Salary: we offer a competitive salary commensurate with the qualifications and experience of the candidate and according to the cost of living in Barcelona  Starting date: ASAPFor more information follow this link",
+      "category"    : "job"
+    },
+  
+    {
+      "title"       : "PhD Positions in Cloud-Edge Computing",
+      "url"         : "/jobs/innsbruck_phd/",
+      "description" : "About the jobThe Institute of Computer Science at the University of Innsbruck, Austria seeks for excellent PhD students to carry out research in Cloud, Edge and IoT computing.Your profileYou are enthusiastic about developing and investigating innovative research ideas and systems within the discipline of distributed systems? You have a master’s or equivalent degree in computer science with excellent performance? You are a highly skilled Java programmer? You have good knowledge in programming with scripting languages? You have a strong background in distributed systems, Cloud computing and virtualization techniques? You stand out from your peers because of strong commitment and independent work? You are a team player and communicative (excellent oral and written English skills, good ability to write scientific publications)?Required Skills  Java (expert programmer)  Docker  git and GitHub  experience with cloud providers, e.g. AWSPreferred Qualifications  Eclipse VertX  google guice  JUnit  Gradle  scripting language (e.g. python or node/typescript)  TerraForm  Serverless (FaaS) platform  edge and IoT computing infrastructures  Experience with ML/RL/DL  event-driven systemsOur offerSuccessful candidates will join a dynamic, international and world-wide highly regarded research team. As fully funded PhD students they will investigate novel Cloud, Edge and Fog techniques that are built based on Java and modern virtualization methods. The particular research topics of interest include  robust, secure and service agnostic resource management,  data and work distribution,  serverless architectures for distributed applications  AI-enabled cloud-edge framework and cognitive services  dynamic allocation of cloud services,  automatic discovery and composition of services,  orchestration and usage of services,  scheduling and optimization,  resilient and secure runtime environments,  application development environments, and  programmingfor Cloud, Fog and Edge infrastructures.The research of these PhD positions will be conducted as part of the APOLLO (application orchestration and runtime framework for leveraging the edge-cloud continuum). Our PhD students are given the opportunity to work with some of the most advanced Cloud, Fog and Edge infrastructures in Europe and gain interdisciplinary expertise by participating in national and international (EU funded H2020) projects. Note that the working and study language as well as the entire PhD course and research program are held in English only. There is no need to learn German for these positions.The University of Innsbruck (UIBK)Founded in 1669 with several Nobel Prize winners, today the University of Innsbruck is the largest educational institution in Western Austria ranked as an international top-200 University in Computer Science. UIBK has a long history in distributed systems, and has been involved in a substantial number of national and international distributed systems projects. We are developing the Apollo application development and computing environment (https://apollowf.github.io). We have coordinated several EU projects on distributed and parallel systems including the edutain@grid, AllScale and the ENTICE project. We are currently investigating the cloud/fog/edge continuum which is changing from a pure elastic provisioning of virtual resources to a transparent and adaptive hosting environment that fully realizes the “everything as a service” provisioning concept, from centralized cloud to the edge and from network and computing infrastructure up to the application layer.Innsbruck and its EnvironmentThe City of Innsbruck, which hosted the Olympic winter games twice, is located in the beautiful surroundings of the Tyrolean Alps. The combination of the Alpine environment and the urban life in this historically grown town provides a high quality of living.Your applicationCandidates should submit their application as soon as possible.Application documents  Motivation letter (Why does your expertise and vision fit the profile of the open PhD position?)  Full CV including at least 2 references  Copy of BSc and MSc degrees  Transcripts for all study programs  If available provide TOEFL and GRE test resultsAll documents must be submitted in English. The documents must be merged into a single zip file and sent to thomas.fahringer@uibk.ac.at (subject line: Full-time PhD Position in Cloud computing). For additional files such as theses and publications please add a link to a cloud repository and make it accessible. The candidate will receive an e-mail confirming receipt of the application.Application Process and Interview  Interviews will take place in stages as soon as possible, perhaps via Skype.  Applicants are encouraged to apply immediately as the position will be filled upon finding the right candidate.  We reserve the right to hold applications on file for potential future job openings.Please direct questions to:Prof. Dr. Thomas FahringerInstitute of Computer Science, University of InnsbruckTechnikerstr. 21a, A-6020 Innsbruck, AustriaEmail: Thomas.Fahringer@uibk.ac.atURL: https://dps.uibk.ac.at",
+      "category"    : "job"
+    },
+  
+    {
+      "title"       : "Lead Full Stack Software Developer",
+      "url"         : "/jobs/ornl_lead_software_engineer/",
+      "description" : "OverviewThe Data Lifecycle and Scalable Workflows Group at Oak Ridge National Laboratory (ORNL) is seeking a Full Stack Software Developer to add to our team.  In this position, you will provide products and services for scientific data management at leadership-class scale.  The ideal candidate is a full-stack developer that is comfortable working across multiple technologies.  Prior experience with C/C++/Python, data-heavy applications, distributed systems, and microservices is preferred but not required.  To be successful in this role, you must be team oriented, well-versed in computer science fundamentals, and demonstrate a drive for self-learning.  Our team has a diverse skill set and are natural problem solvers who share a passion about supporting scientists and enabling new discoveries for humanity, while working on some of the most challenging problems with cutting-edge technologies.This position is part of the Advanced Technologies Section within the National Center for Computational Sciences (NCCS) Division at ORNL.  NCCS has a deep legacy in High Performance Computing (HPC) operating leadership-class systems, deploying the world’s first exascale system (Frontier) and largest parallel file system.  Data is at the heart of science and workflows reduce a scientist’s cognitive overhead and increase science reproducibility - the Data Lifecycle and Scalable Workflows Group tackles these challenges for supercomputing facilities.Major Duties and Responsibilities  Produce software applications and science-based systems to manage big data  Collaborate with other research and technical professionals to develop new capabilities that execute on ORNL’s leading data and compute infrastructures  Support multiple technology projects at the same time  Develop, test, and deploy distributed high-throughput services  Optimize software for speed and scalability  Evaluate and test software that might be deployed in the futureBasic Qualifications  Bachelor’s degree in Computer Science, Software Engineering, or related field  8+ years of software development experience (an equivalent combination of education and experience may be considered)  Proficiency with any of the following languages:  C/C++, Go, or Python  Proficiency with any front-end languages (e.g., Javascript, AngularJS, React)  Experience with containers (e.g., Docker) and container orchestration (e.g., Kubernetes)  Experience with version control systems (e.g., Git)Desired Qualifications  10+ years of software development  Experience with back end, middleware, and front-end  Experience with CI/CD practices, test methodologies  Knowledge of Agile development methodologies and tools  Familiarity with open-source development tools and techniques  Evaluating/integrating COTS/open-source software where appropriate (we don’t have time to reinvent the wheel)  Highly skilled in people management/development, team oriented, collaborative  Strong problem-solving skills  Ability to think critically  Excellent written and oral communication skills",
+      "category"    : "job"
+    },
+  
+    {
+      "title"       : "Assistant Professor of Computer Science in the area of Cloud, Edge and IoT Computing",
+      "url"         : "/jobs/university_innsbruck_assistant_professor/",
+      "description" : "About the jobThe Department of Computer Science (at the Faculty of Mathematics, Computer Science and Physics) at the University of Innsbruck seeks to fill the position of a full-time Assistant Professor of Computer Science in the area of Cloud, Edge and IoT Computing as soon as possible, ideally by Jan. 1, 2023. This position is initially limited to 6 years; a tenure-track agreement can be offered within the first year of employment. Upon positive evaluation, the position is converted into a tenured Associate Professorship. This career position is embedded within an attractive environment of existing competencies close to the above thematic area, including distributed systems, parallel systems, software engineering, data management, security and privacy.TasksThe successful applicant should represent the area of Cloud, Edge and IoT Computing in research and teaching. Here, Cloud, Edge and IoT Computing refers to Distributed Systems with a particular focus on  application development environments and tools  scalable decentralized runtime systems and middleware  optimization of applications and runtime systems  decentralized management and allocation of compute and data resources  distributed processing and management of large-scale data  distributed scheduling, resilience, and self-organization  service composition, provisioning, and orchestration  mobile computing, and autonomous agentsTeaching comprises lectures, especially in the area of distributed systems, for the degree programs of the Department of Computer Science. Tenured Associate Professors are also expected to teach mandatory courses in the Bachelor’s program.Acquisition and scientific management of third-party funded research projectsSupervision and co-supervision of Bachelor’s, Master’s and PhD studentsParticipation in organizational and administrative tasks as well as in evaluation measuresRequired Qualifications  Doctoral degree in computer science or a related field;  Postdoctoral work experience after the dissertation/PhD;  Pertinent and independent scientific achievements beyond the dissertation/PhD;  Research experience and international visibility in the area of Cloud, Edge and IoT Computing;  Relevant publications in leading international, refereed conference proceedings and journals as well as presentations at international conferences and workshops;  Research collaborations with international partners;  Experience in the acquisition and implementation of externally-funded research projects;  Experience in the (co-)supervision of Bachelor’s and Master’s theses;  Pertinent experience in academic mobility during or after the PhD;  Proficiency (written and oral) in English;  Willingness to teach in German within two years after appointment;  Didactic competence and demonstrated teaching experience;  Social competencies, communication skills, and ability to work in teamsHow to ApplyThe application must be submitted in English and must contain:  CV with a description of the academic and professional career;  List of scientific publications;  List of scientific presentations, other scientific achievements, and projects;  Names and contact information of at least two references;  Description of a research plan at the level of a habilitation;  Teaching statement and a list of courses taught with evaluations (if available)The University of Innsbruck strives to increase the proportion of its female employees, especially in leadership positions, and therefore explicitly invites women to apply. In the case of equivalent qualifications, female applicants will be given preference.The annual gross salary is € 56,868 at the time of employment. It is raised to € 64,394 if the tenure-track agreement is signed within the first year of employment, and once again if the qualification goals are completed (€ 69,820 as of 2022).The documents must be merged into a single PDF file and sent to Thomas.Fahringer@uibk.ac.at (subject line: Assistant Professor in Cloud, Edge and IoT Computing) by Sept 30, 2022. For additional files please add a link in the submitted pdf to a cloud repository and make it accessible. The candidate will receive an e-mail confirming receipt of the application.Direct questions toProf. Dr. Thomas FahringerInstitute of Computer Science, University of InnsbruckTechnikerstr. 21a, A-6020 Innsbruck, AustriaEmail: Thomas.Fahringer@uibk.ac.atURL: https://dps.uibk.ac.at",
+      "category"    : "job"
+    },
+  
+  
+    {
+      "title"       : "Workflows Education:  Underlying  Computer Science Concepts",
+      "url"         : "/stories/2022/05/16/workflow-education/",
+      "description" : "Workflow applications have become mainstream in many domains, including most of the sciences, engineering, as well as AI. It is thus crucial that educational and training opportunities be available to help grow an effective workflow workforce. Several institutions have already developed and made available training material for particular workflow systems, so that users can learn how to deploy and execute their workflow applications on hardware platforms on which these systems are installed. Less developed, but no less crucial, are pedagogic materials that target the fundamental concepts necessary to understand workflow applications and reason about their executions and the performance thereof. One of the reasons why these pedagogic materials are less developed is that many of the relevant concepts belong to “standard” parallel and distributed computing (PDC) topics, and it is assumed that these topics are already covered in university computer science curricula.This assumption is problematic for several reasons. First, it is well recognized that PDC is not sufficiently included in undergraduate computer science curricula, which has motivated the establishment of the NSF/IEEE-TCPP Curriculum Initiative on Parallel and Distributed Computing. Although progress is being made, many computer science college graduates still do not have sufficient, or any, PDC exposure. Second, many potential members of the workflow workforce will not be computer science graduates. Third, even if students have been taught the relevant concepts at different times throughout their education, they may not have retained them effectively. There is a thus need for a one-stop, self-contained ``these are the concepts needed for being able understand and reason about workflow executions” pedagogic package. This content of this package should draw from multiple sources, and should be curated and vetted by the Workflow Community Initiative. Its main use would be to provide “prerequisite concepts you need to know for workflows” to students (as a complement to or a component of university courses, before starting a workflow-related internship, before engaging on graduate-level workflow-related projects, etc.) and professionals (e.g., before beginning to use workflows, to better understand workflow behavior and performance in various professional contexts).NSF/IEEE-TCPP Curriculum Initiative on Parallel and Distributed Computing.A project that could provide useful components to include in this envisioned pedagogic package is EduWRENCH. EduWRENCH provides many pedagogic modules, each one including a pedagogic narrative, practice questions, open questions, and in-the-browser simulation-driven activities. Basic EduWRENCH modules target fundamental concepts of computation, I/O, and networking and explain how they drive application performance. Some modules focus on principles of parallel computation on multi-core machines, including notions of parallelism, speedup, efficiency, overhead, and load balancing. Other modules focus on principles of distributed computation over a network, including notions of data proximity. Several more advanced build on the aforementioned modules to teach workflow concepts and/or to use workflows as case-studies for more advanced topics such as scheduling, energy efficiency, etc. Most EduWRENCH modules have already been used effectively not only in university courses, but also to train beginning graduate students who are about to join a workflow research and development group. EduWRENCH by no means provides a comprehensive pedagogic package for workflows, but it may serve as a good starting point for the Workflow Community Initiative to define what such a package should and should not contain.EduWRENCH website.",
+      "category"    : "story"
+    },
+  
+    {
+      "title"       : "A quick overview of Nextflow workflow system",
+      "url"         : "/stories/2022/09/28/nextflow/",
+      "description" : "Workflow management systems are as diverse as the business and scientific processes they support – from engineering to research to process automation. This article describes Nextflow – an open-source workflow manager widely used in life sciences. It covers the motivations behind Nextflow, explains what it is, and describes what the future holds for the platform.Background and MotivationsLike similar open source efforts, Nextflow was born out of a need to solve specific problems while I was working as a research engineer in the Comparative Bioinformatics labs at the Centre for Genomics Regulation (CRG). Researchers were struggling with several issues that are all likely too familiar to workflows community members – complex, buggy scripts, long-running workflows that would suddenly fail, and challenges monitoring, managing, and maintaining workflows.While there were several available workflow managers at the time, none of them specifically addressed our requirement. A fundamental challenge in the lab at that time was data handling. Comparative bioinformatics involves studying genome and protein sequences across species, and population-level studies can involve massive amounts of data. We needed a simple yet powerful framework to deploy the executions of thousands of tasks, comparing different alignment methods and protein sequences each other.Some Key Ideas Behind NextflowNextflow was designed from scratch having clear in mind key ideas and best practices:  Allow developers to reuse any existing piece of software without the need of intermediate interface or wrapper; the tool command line is the interface and Linux is the integration layer.  Manage tasks as a functional and self-contained unit of work. This was a key requirement to enable the deployment across heterogeneous computing platforms and allow auto-retry execution policy on failure.  Provides a high-level abstraction for tasks parallelisation that allows developers to write simple yet high-scalable application, without the need to struggle with low level problem such as race conditions  and locks to access shared resources.  Strongly decouple the scientific application logic from the configuration &amp;amp; deployment setting, in order to streamline the deployment across different platforms and enable the migration to cloud environments.  Remove unnecessary dependencies with external services and databases. We wanted a zero configuration experience both for the Nextflow runtime and the resulting pipelines.  Enable debugging and recovering of failed executions. Bioinformatics pipeline can spin the execution of tens of thousands tasks. If something breaks we need a strategy that would allow the debugging of the failed task independently of the rest of the pipeline, and make it possible to recover the computation once the problem was solved from the last successfully computed tasks, to avoid throwing away days of computing resources.Between these, very likely, the most important design choice that distinguishes Nextflow compared to other workflow management systems is the adoption of the data flow programming paradigm.We often imagine workflows as a sequence of steps designed from the top down and including various dependencies, decision points, and sub-flows. There is another way to envision workflows, however, and that is from the perspective of the individual process steps. Individual steps have no notion of the overall flow. They have an input, perform some processing, and write data to an output, typically another step in the workflow.Using this programming model you can think a workflow behaving like spreadsheet. In a spreadsheet, users enter expressions in cells that depend on calculations in other cells. The dependencies between cells can be complex, but users don’t think about how the spreadsheet will sequence calculations. Instead, they concentrate on the logic in each cell. When a cell changes, the spreadsheet worries about how to propagate changes to dependent cells. Nextflow is described as reactive because task execution is triggered when inputs change or become valid. It turns out that this model works surprisingly well at scale, and opportunities for parallelism occur naturally without the workflow designer needing to think about them.From a technical point of view, Nextflow processes (aka tasks) can be thought of as reactive agents which run  in parallel waiting for the input data that trigger their execution. It’s important to highlight that each of these processes are isolated from each other, and they can only communicate via asynchronous messages represented by dataflow variables.Along with these, another pillar component of Nextflow was the adoption of containers as a core feature of the framework. Nextflow abstracts away the containerisation of the pipeline execution in a declarative manner. This means the user is only required to specify the container that needs to be used to run specific workflow tasks. Nextflow takes care to use this information to run the task within the container depending on the target execution platform that can be, for example, AWS Batch, an HPC batch scheduler e.g. Slurm or a local computer. This choice was proven to be critical to enable the portability and reproducibility of the resulting data analysis workflow. Nextflow nowadays supports multiple container runtime technologies, including Docker, Podman, Singularity, Charliecloud among others.Nextflow TodayWhen Nextflow was launched as an open-source project in 2013, we couldn’t have imagined what it has become today. Today, Nextflow is downloaded over 55,000 times monthly and used by over 1,000 organizations, including some of the world’s largest pharmaceutical firms. Ideas like containers and support for source code managers (SCMs) are so thoroughly baked into Nextflow’s design that they seem commonplace.In Nextflow, we were careful to decouple workflow logic from the details of underlying computing environments. To achieve this, Nextflow supports an abstraction called an Executor. Executors are pluggable components that enable pipelines to run without modification across virtually any compute environment, from a local host to an on-prem HPC cluster to various cloud services. Shifting to a new compute environment is as simple as changing a few lines of code in a configuration file.Pipelines can be stored locally or pulled from a preferred SCM at runtime. While applications can still be installed locally, pulling containers encapsulating bioinformatics tools has become the norm. Nextflow handles all the details, including compute resources, data movement, and making datasets visible to containers at runtime. Intermediate results and data are also cached, making flows resilient and recoverable after a failed step.The nf-core CommunityThe nf-core community launched in 2018 marked a key milestone for the Nextflow community. nf-core is an independent effort to collect a curated set of analysis pipelines built using Nextflow. Significant effort has gone into developing tools, templates, and guidelines that enable domain experts to contribute to the community. The result is a set of high-quality pipelines that are portable, reproducible, fully documented, and cloud-ready. A recent State of the Workflow 2022 community survey showed that 62% of Nextflow users take advantage of these pipelines in their day-to-day research – a testament to their utility and the importance of this effort.Towards the FutureWe are fortunate to have vibrant user and developer communities actively engaged in Nextflow and helping to guide its evolution. We continue to support new computing environments, introduce new functionality, and improve throughput and scalability. I recently shared some plans for Nextflow in the article Evolution of the Nextflow runtime.We are also planning to further enhance the support for containers providing a better automation on the overall container management lifecycle and ease the provisioning of multi-containers required by modern data analysis pipelines.We are also improving our commercial Tower offering enabling improved collaboration, new data-related features, and features aimed at helping further optimize resource usage to reduce cloud spending.You can learn more about Nextflow or download it for free by visiting nextflow.io. Existing Nextflow users can test-drive Nextflow Tower in the cloud at tower.nf.",
+      "category"    : "story"
+    },
+  
+    {
+      "title"       : "Widening Workflows usage: the eFlows4HPC project",
+      "url"         : "/stories/2022/09/29/eflows4hpc/",
+      "description" : "The European High-Performance Computing Joint Undertaking (EuroHPC JU) aims at developing a World Class Supercomputing Ecosystem in Europe and, with this goal, is procuring and deploying pre-exascale and petascale systems in Europe. These systems will be capable of running large and complex applications. In this sense, the demand from the application stakeholders includes not only aspects related to High-Performance Computing (HPC) but also artificial intelligence (AI) and data analytics.The eFlows4HPC project has as objective to provide a software stack that makes easier the development of workflows that involve HPC, AI and data analytics components. The project aims to give support to dynamic workflows in the sense that the set of nodes in the graph of the workflow can change during its execution due to changes in the input data or context of the execution, and be reactive to events that may occur. The runtime systems supporting this execution should be able to perform efficient resource management, both in terms of time and energy.Another objective of the project is to provide mechanisms to make the use and reuse of HPC easier by wider communities. For this purpose, the HPC Workflows as a Service (HPCWaaS) methodology has been proposed. The goal is to provide methodologies and tools that enable sharing and reuse of existing workflows, and that assist when adapting workflow templates to create new workflow instances.eFlows4HPC software stack.The eFlows4HPC software stack includes components to develop the workflows at three levels: high-level topology of the workflows using extended TOSCA, required data transfers with the Data Logistic Pipelines and the computational aspects of the workflow with PyCOMPSs. Once a workflow has been developed, it is registered in the Workflow Registry. Similarly, the different components of the workflows, pre-trained AI models and data sets are registered in a set of catalogues and repositories. All these registries and catalogues are used by the HPCWaaS interface, which provides a REST API to deploy and execute the workflows. On execution, the stack also provides a set of runtime libraries to support the workflow execution and data management.HPCWaaS methodology.The eFlows4HPC developments are demonstrated in the project through three pillar applications in the areas of digital twins for manufacturing, climate modeling and prediction and urgent computing for natural hazards. Pillar I deals with the construction of digital twins for the prototyping of complex manufactured objects integrating state-of-the-art adaptive solvers with machine learning and data-mining, contributing to the Industry 4.0 vision. Pillar II develops innovative adaptive workflows for climate and for the study of tropical cyclones in the context of the CMIP6 experiment, including in-situ analytics. Pillar III explores the modelling of natural catastrophes – in particular, earthquakes and their associated tsunamis shortly after such an event is recorded.Coordinated by the Barcelona Supercomputing Center (BSC), the eFlows4HPC consortium comprises 16 partners from seven different countries with expertise in technical aspects:  supercomputing and acceleration, workflow management and orchestration, machine learning, big data analytics, data management, and storage; together with expertise in the pillar workflows’ areas: manufacturing, climate, urgent computing.The initial results of the project are available under the project website in its deliverable section (see https://eflows4hpc.eu/deliverables/). The source code and documentation are publicly available as well (see https://github.com/eflows4hpc and https://eflows4hpc.readthedocs.io/en/latest/).",
+      "category"    : "story"
+    },
+  
+    {
+      "title"       : "Covalent: Workflow Orchestration on Highly Heterogeneous Infrastructure",
+      "url"         : "/stories/2022/10/24/covalent/",
+      "description" : "Workflow orchestration is a common operations framework in the field of distributed computing.  As high performance computing (HPC) becomes more distributed and incorporates a greater degree of heterogeneous technologies, workflow orchestration will no doubt become a common practice in this space, as it has in adjacent spaces such as Machine Learning Operations (MLOps) and more recently in quantum computing. Users with repeatable sets of interdependent tasks (workflows) may wish to run them on a time-based schedule or, more commonly in research and development, they may wish to iterate on the design of one or more experimental workflows. This iteration can include different algorithms, different model hyperparameters, different compute backends, or even different compute frameworks entirely.  With these options, it is increasingly possible to construct and optimize workflows which span across multiple on-premises supercomputers, multiple clouds, and even emerging technologies such as quantum computers.While so many options are a delight to workflow architects, they pose real challenges for operations. How are credentials managed and conveyed across such systems?  How do researchers ensure workflow data pipelines are efficient and secure?  How are logical tasks broken apart and rejoined (“packed”) to optimize information transfer across physically distant systems?  When something fails, how easy is it to trace back errors across frameworks and to re-run portions of a workflow?  There are certainly many other such challenges that workflow practitioners are familiar with.Covalent unifies tasks written in different languages and with heterogeneous compute requirements.Covalent is Agnostiq’s answer to these challenges.  With roots in quantum computing applications, Agnostiq researchers quickly learned that the operational challenges in quantum research today consume the majority of a project’s time. Covalent was developed primarily to manage experiments and facilitate access to cloud compute resources for researchers with little or no cloud engineering background. Today, users can interact with a large variety of cloud resources – including Batch, Kubernetes, and Braket Hybrid Jobs – using Covalent’s AWS Plugins package.The release of a Slurm plugin further enabled our team to interact with partners’ supercomputing resources, in particular in federated or hybrid-cloud configurations. Such flexibility is increasingly in demand as scalability begins to hit a power-consumption barrier, and as more HPC vendors and users begin to incorporate cloud and other distributed compute platforms. As we realized these tools can benefit more than our organization, we decided to transform Covalent into a product in its own right, and to open-source the software on GitHub in January 2022.Covalent’s user interface enables users to easily visualize and interact with distributed workflows.Quantum computing, of course, introduces its own set of unique needs.  Firmly rooted as a heterogeneous technology from the outset, quantum computers today mainly run Noisy Intermediate-Scale Quantum (NISQ) algorithms which are variational, or hybrid, in nature.  These algorithms require classical and quantum resources working in tandem.  Whereas traditional HPC workflows often involve loosely coupled tasks spanning many hours or days in a single location, variational quantum workflows are tightly coupled, with timescales sometimes under a single second per task. Since classical and quantum resources may not necessarily be physically located in the same data center, most of the execution time may in fact arise due to data transfer and requeuing – often thousands of times per workflow.  A remedy to this requires collaboration among many parties in order to optimize the user experience and maximize hardware occupancy.  With Covalent at the center of this conversation, Agnostiq hopes to stimulate a new discussion around how we think about workflows in highly heterogeneous environments.Users and providers interested in learning more about Covalent can view the source code on GitHub, join the Covalent Slack channel, follow us on Twitter, or reach out to the team for more information at contact@agnostiq.ai.  We also welcome open-source contributions and discussions on GitHub.  If you like what we are up to, please show your support by starring our repository.",
+      "category"    : "story"
+    },
+  
+  
+    {
+      "title"       : "CLOUD 2023 (Conference)",
+      "url"         : "https://conferences.computer.org/cloud/2023/",
+      "description" : "IEEE International Conference on Cloud Computing",
+      "category"    : "event"
+    },
+  
+    {
+      "title"       : "HPDC 2023 (Conference)",
+      "url"         : "https://www.hpdc.org/2023",
+      "description" : "32nd ACM International Symposium on High-Performance Parallel and Distributed Computing",
+      "category"    : "event"
+    },
+  
+    {
+      "title"       : "Euro-Par 2023 (Conference)",
+      "url"         : "https://2023.euro-par.org/",
+      "description" : "29th International European Conference on Parallel and Distributed Computing",
+      "category"    : "event"
+    },
+  
+    {
+      "title"       : "eScience 2023 (Conference)",
+      "url"         : "https://www.escience-conference.org/2023/",
+      "description" : "19th IEEE International Conference on eScience",
+      "category"    : "event"
+    },
+  
+    {
+      "title"       : "PASC 2023 (Conference)",
+      "url"         : "https://pasc23.pasc-conference.org/",
+      "description" : "Platform for Advanced Scientific Computing",
+      "category"    : "event"
+    },
+  
+    {
+      "title"       : "IPDPS 2023 (Conference)",
+      "url"         : "https://www.ipdps.org/",
+      "description" : "37th IEEE International Parallel & Distributed Processing Symposium",
+      "category"    : "event"
+    },
+  
+    {
+      "title"       : "CCGrid 2023 (Conference)",
+      "url"         : "https://ccgrid2023.iisc.ac.in/",
+      "description" : "23rd IEEE/ACM international Symposium on Cluster, Cloud and Internet Computing",
+      "category"    : "event"
+    },
+  
+    {
+      "title"       : "HTCondor Week (Conference)",
+      "url"         : "https://indico.cern.ch/event/1174979/",
+      "description" : "European HTCondor Week 2022",
+      "category"    : "event"
+    },
+  
+    {
+      "title"       : "Nextflow Summit (Summit)",
+      "url"         : "https://summit.nextflow.io/",
+      "description" : "Nextflow Summit",
+      "category"    : "event"
+    },
+  
+    {
+      "title"       : "ERROR 2022 (Workshop)",
+      "url"         : "https://error-workshop.org/",
+      "description" : "2nd Workshop on E-science ReseaRch leading tO negative Results",
+      "category"    : "event"
+    },
+  
+    {
+      "title"       : "Sci-k 2022 (Workshop)",
+      "url"         : "https://sci-k.github.io/2022/",
+      "description" : "2nd International Workshop on Scientific Knowledge: Representation, Discovery, and Assessment",
+      "category"    : "event"
+    },
+  
+    {
+      "title"       : "eScience 2022 (Conference)",
+      "url"         : "https://escience-conference.org/2022",
+      "description" : "18th IEEE International Conference on e-Science",
+      "category"    : "event"
+    },
+  
+    {
+      "title"       : "BOSC 2022 (Conference)",
+      "url"         : "https://www.open-bio.org/events/bosc-2022/",
+      "description" : "Bioinformatics Open Source Conference",
+      "category"    : "event"
+    },
+  
+    {
+      "title"       : "HPDC 2022 (Conference)",
+      "url"         : "http://www.hpdc.org/2022/",
+      "description" : "31st International Symposium on High-Performance Parallel and Distributed Computing",
+      "category"    : "event"
+    },
+  
+    {
+      "title"       : "SC'22 (Conference)",
+      "url"         : "https://sc22.supercomputing.org/",
+      "description" : "The International Conference for High Performance Computing, Networking, Storage, and Analysis",
+      "category"    : "event"
+    },
+  
+    {
+      "title"       : "Euro-Par 2022 (Conference)",
+      "url"         : "https://2022.euro-par.org/",
+      "description" : "28th International European Conference on Parallel and Distributed Computing",
+      "category"    : "event"
+    },
+  
+    {
+      "title"       : "CWL 2022 (Conference)",
+      "url"         : "https://cwl.discourse.group/t/2022-cwl-conference-feb-28-mar-4-2022",
+      "description" : "2022 Common Workflow Language Conference",
+      "category"    : "event"
+    },
+  
+    {
+      "title"       : "GCC2022 (Conference)",
+      "url"         : "https://galaxyproject.org/events/gcc2022/",
+      "description" : "2022 Galaxy Community Conference",
+      "category"    : "event"
+    },
+  
+    {
+      "title"       : "nf-core (Workshop)",
+      "url"         : "https://nf-co.re/events/2022/hackathon-march-2022",
+      "description" : "March 2022 Hackathon",
+      "category"    : "event"
+    },
+  
+    {
+      "title"       : "WORKS22 (Workshop)",
+      "url"         : "https://works-workshop.org/",
+      "description" : "17th Workshop on Workflows in Support of Large-Scale Science",
+      "category"    : "event"
+    },
+  
+    {
+      "title"       : "PASC 2022 (Conference)",
+      "url"         : "https://pasc22.pasc-conference.org/",
+      "description" : "Platform for Advanced Scientific Computing",
+      "category"    : "event"
+    },
+  
+    {
+      "title"       : "ISC 2022 (Conference)",
+      "url"         : "https://www.isc-hpc.com",
+      "description" : "ISC High Performance",
+      "category"    : "event"
+    },
+  
+    {
+      "title"       : "ReWords 2022 (Workshop)",
+      "url"         : "https://sites.google.com/view/rewords22",
+      "description" : "2nd Workshop on Reproducible Workflows, Data Management, and Security",
+      "category"    : "event"
+    },
+  
+    {
+      "title"       : "FDO 2022 (Conference)",
+      "url"         : "https://www.fdo2022.org/",
+      "description" : "1st International Conference on FAIR Digital Objects",
+      "category"    : "event"
+    },
+  
+    {
+      "title"       : "Parsl & funcX Fest 2022 (Workshop)",
+      "url"         : "https://parsl-project.org/parslfest2022.html",
+      "description" : "Parsl & funcX Fest 2022",
+      "category"    : "event"
+    },
+  
+  
+    {
+      "title"       : "SC22 BoF",
+      "url"         : "/bof/sc22/",
+      "description" : "Nov 15, 2022<br />An Update on the Community Roadmap for HPC and AI Scientific Workflows Research and Development",
+      "category"    : "bof"
+    },
+  
+  
+    {
+      "title"       : "Workflows Community Summit",
+      "url"         : "/summits/2022/",
+      "description" : "Nov 29, 2022<br />A Roadmap Revolution",
+      "category"    : "summit"
+    } ,
+  
+    {
+      "title"       : "Workflows Community Summit",
+      "url"         : "/summits/community/",
+      "description" : "Jan 13, 2021<br />Bringing the Scientific Workflows Community Together",
+      "category"    : "summit"
+    } ,
+  
+    {
+      "title"       : "Workflows Community Summit",
+      "url"         : "/summits/facilities/",
+      "description" : "Nov 08, 2021<br />Tightening the Integration between Computing Facilities and Scientific Workflows",
+      "category"    : "summit"
+    } ,
+  
+    {
+      "title"       : "Workflows Community Summit",
+      "url"         : "/summits/technical/",
+      "description" : "Apr 07, 2021<br />Advancing the State-of-the-art of Scientific Workflows Management Systems Research and Development",
+      "category"    : "summit"
+    } 
+  
+]
